@@ -15,9 +15,7 @@ vk._auth_token()
 
 print("Bot is working!")
 
-def reading():
-    global x
-    global y
+while True:
     try:
         messages = vk.method("messages.getConversations", {"offset": 0, "count": 1, "filter": "unanswered"})
         if messages["count"] >= 1:
@@ -26,18 +24,14 @@ def reading():
             if body.lower() != lin[x].rstrip("\n"):
                 x = x + 2
                 y = y + 2
-                reading()
+                continue
             elif body.lower() == lin[x].rstrip("\n"):
                 vk.method("messages.send", {"peer_id": id, "message": lin[y].rstrip("\n"), "random_id": random.randint(1, 2147483647)})
                 x = 1
                 y = 2
-
+                continue
     except Exception as E:
         time.sleep(1)
 
-while True:
-    reading()
-    continue
-
 #made by alde-the-coder
-#version 1.0
+#version 1.1
