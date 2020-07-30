@@ -31,6 +31,7 @@ while True:
                 y = 2
                 continue
     except Exception as E:
+        
         time.sleep(1)
 
 #made by alde-the-coder
