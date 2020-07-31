@@ -10,10 +10,10 @@ lin = f.readlines()
 token = (lin[0]).rstrip("\n")
 
 vk = vk_api.VkApi(token=token)
-
 vk._auth_token()
 
 print("Bot is working!")
+#xd
 
 while True:
     try:
@@ -31,8 +31,7 @@ while True:
                 y = 2
                 continue
     except Exception as E:
-        
         time.sleep(1)
 
 #made by alde-the-coder
-#version 1.1
+#version 1.11
