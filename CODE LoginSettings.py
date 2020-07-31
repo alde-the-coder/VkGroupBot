@@ -13,7 +13,7 @@ while True:
         f = open("settings.txt", "w")
         f.close()
         continue
-
+        
 while True:
     msgb = input("Enter user message to bot \n")
     msgu = input("Enter bot message to user \n")
