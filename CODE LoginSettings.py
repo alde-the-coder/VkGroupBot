@@ -23,9 +23,9 @@ while True:
     f.close()
     mchoice = input("Press 1 if you want to save and exit, 2 if you want to make more messages\n")
     if mchoice == "1":
-            break
+        break
     if choice == "2":
-            continue
+        continue
 
 #made by alde-the-coder
 #version 1.11
