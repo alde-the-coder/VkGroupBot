@@ -6,7 +6,7 @@ EN
 5. If the bot does not know the word that the user wrote, he will not answer.
 6. DO NOT PUT SPACES - THEY DO NOT LET THE PROGRAM WORK NORMALLY!
 7. If the application crashed - check your Internet connection or the correctness of the entered data, if this does not help, try overwriting the settings.
-8. The larger the user's message number, the more the bot will respond. For example, if a user wrote message number 10, it will take the bot about 5 seconds to respond.
+8. The larger the user's message number, the more time the bot needs to respond. For example, if a user wrote message number 10, it will take the bot about 5 seconds to respond.
 
 
 
