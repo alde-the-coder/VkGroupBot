@@ -1,3 +1,5 @@
+Windows
+
 EN
 1. The application opens for about 5-15 seconds, during this time, do not touch the application window!
 2. To make a bot, open vkgroupbot.exe, enter your token and messanges/answers you want, after that select to launch the bot and the bot is launched! (I advise you to write something to him to make sure everything works)
@@ -19,3 +21,19 @@ RU
 6. НЕ СТАВТЕ ПРОБЕЛЫ - ОНИ НЕ ДАЮТ ПРОГРАММЕ РАБОТАТЬ НОРМАЛЬНО!
 7. Если приложение вылетело - проверьте ваше соединение с интернетом или правильность введенных данных, если это не помогло, попробуйте перезаписать данные.
 8. Чем больше номер сообщения пользователя - тем больше будет отвечать бот. Например, если пользователь написал сообщение под номером 10, боту потребуется около 5 секунд, чтобы ответить.
+
+Linux
+
+EN
+1. You need pip installed.
+2. Install vk_api (pip install vk_api or pip3 install vk_api).
+3. Open CODE VkGroupBot.py and run it.
+Other things are all the same as in windows instruction.
+
+
+
+RU
+1. У вас должен быть установлен pip.
+2. Установите vk_api (pip install vk_api или pip3 install vk_api).
+3. Откройте CODE VkGroupBot.py и запустите его.
+4. Все остальное нужно делать как в инструкции для windows.
