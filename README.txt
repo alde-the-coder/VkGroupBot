@@ -25,9 +25,9 @@ RU
 Linux
 
 EN
-1. You need pip installed.
+1. You need pip to be installed.
 2. Install vk_api (pip install vk_api or pip3 install vk_api).
-3. Open CODE VkGroupBot.py and run it.
+3. Open vgb.py and run it.
 Other things are all the same as in windows instruction.
 
 
@@ -35,5 +35,5 @@ Other things are all the same as in windows instruction.
 RU
 1. У вас должен быть установлен pip.
 2. Установите vk_api (pip install vk_api или pip3 install vk_api).
-3. Откройте CODE VkGroupBot.py и запустите его.
+3. Откройте vgb.py и запустите его.
 Все остальное нужно делать как в инструкции для windows.
