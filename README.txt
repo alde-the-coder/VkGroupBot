@@ -8,7 +8,7 @@ EN
 5. If the bot does not know the word that the user wrote, he will not answer.
 6. DO NOT PUT SPACES - THEY DO NOT LET THE PROGRAM WORK NORMALLY!
 7. If the application crashed - check your Internet connection or the correctness of the entered data, if this does not help, try overwriting the settings.
-8. The larger the user's message number, the more time the bot needs to respond. For example, if a user wrote message number 10, it will take the bot about 5 seconds to respond.
+8. After each writing/rewriting settings.txt, you are going to need to restart the application.
 
 
 
@@ -20,7 +20,7 @@ RU
 5. Если бот не знает слово, которое написал пользователь в лс вк, он не ответит.
 6. НЕ СТАВТЕ ПРОБЕЛЫ - ОНИ НЕ ДАЮТ ПРОГРАММЕ РАБОТАТЬ НОРМАЛЬНО!
 7. Если приложение вылетело - проверьте ваше соединение с интернетом или правильность введенных данных, если это не помогло, попробуйте перезаписать данные.
-8. Чем больше номер сообщения пользователя - тем больше будет отвечать бот. Например, если пользователь написал сообщение под номером 10, боту потребуется около 5 секунд, чтобы ответить.
+8. После каждого написания/переписания информации из settings.txt вам нужно будет перезапустить приложение.
 
 Linux
 
