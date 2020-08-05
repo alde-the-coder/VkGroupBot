@@ -1,31 +1,33 @@
 Windows
 
 EN
-1. The application opens for about 5-15 seconds, during this time, do not touch the application window!
-2. To make a bot, open vkgroupbot.exe, enter your token and messanges/answers you want, after that select to launch the bot and the bot is launched! (I advise you to write something to him to make sure everything works)
-3. The settings file stores your token and messages/answers in this order - 1.token 2.msgb 3.msgu 4.msgb2 5.msgu2 and so on, which means that the first line is a token, the second is a message to the bot, the third is message to the user, etc.
-4. After each time you select to rewtite your data, DATA FROM SETTINGS.TXT WILL BE DELETED, I advise you to make a copy of settings.txt.
-5. If the bot does not know the word that the user wrote, he will not answer.
-6. DO NOT PUT SPACES - THEY DO NOT LET THE PROGRAM WORK NORMALLY!
-7. If the application crashed - check your Internet connection or the correctness of the entered data, if this does not help, try overwriting the settings.
-8. After each writing/rewriting settings.txt, you are going to need to restart the application.
+1. You need a python 3 installed (python 2 may work too).
+2. When download vk_api (open cmd, and write python -m pip install vk_api or pip install vk_api)
+3. To make a bot, open vgb.py and ran it, enter your token and messanges/answers you want, after that select to launch the bot and the bot is launched! (I advise you to write something to him to make sure everything works)
+4. The settings file stores your token and messages/answers in this order - 1.token 2.msgb 3.msgu 4.msgb2 5.msgu2 and so on, which means that the first line is a token, the second is a message to the bot, the third is message to the user, etc.
+5. After each time you select to rewtite your data, DATA FROM SETTINGS.TXT WILL BE DELETED, I advise you to make a copy of settings.txt.
+6. If the bot does not know the word that the user wrote, he will not answer.
+7. DO NOT PUT SPACES - THEY DO NOT LET THE PROGRAM WORK NORMALLY!
+8. If the application crashed - check your Internet connection or the correctness of the entered data, if this does not help, try overwriting the settings.
+9. After each writing/rewriting settings.txt, you are going to need to restart the application.
 
 
 
 RU
-1. Приложение открывается около 5-15 секунд, в это время не трогайте окно приложения!
-2. Чтобы сделать бота откройте vkgroupbot.exe, введите туда ваш токен и сообщения/ответы, которые вы хотите, потом выьерите пункт включения бота и бот запущен! (советую написать ему что-то, чтобы убедиться, что все работает)
-3. В файле settings хранятся ваш токен и сообщения-ответы в таком порядке - 1.token 2.msgb 3.msgu 4.msgb2 5.msgu2 и тд, что означает, что первая строка это токен, вторая - сообщение боту, третья - сообщение пользователю и тд.
-4. После каждого выбора перезаписать данные, ДАННЫЕ ИЗ SETTINGS.TXT СТИРАЮТСЯ, советую делать копию settings.txt.
-5. Если бот не знает слово, которое написал пользователь в лс вк, он не ответит.
-6. НЕ СТАВТЕ ПРОБЕЛЫ - ОНИ НЕ ДАЮТ ПРОГРАММЕ РАБОТАТЬ НОРМАЛЬНО!
-7. Если приложение вылетело - проверьте ваше соединение с интернетом или правильность введенных данных, если это не помогло, попробуйте перезаписать данные.
-8. После каждого написания/переписания информации из settings.txt вам нужно будет перезапустить приложение.
+1. У вас должен быть установлен python 3 (python 2 врядли будет работать).
+2. После этого установите vk_api (откройте командную строку и напишите python -m pip install vk_api или pip install vk_api)
+3. Чтобы сделать бота откройте vgb.py и запустите его, введите туда ваш токен и сообщения/ответы, которые вы хотите, потом выьерите пункт включения бота и бот запущен! (советую написать ему что-то, чтобы убедиться, что все работает)
+4. В файле settings хранятся ваш токен и сообщения-ответы в таком порядке - 1.token 2.msgb 3.msgu 4.msgb2 5.msgu2 и тд, что означает, что первая строка это токен, вторая - сообщение боту, третья - сообщение пользователю и тд.
+5. После каждого выбора перезаписать данные, ДАННЫЕ ИЗ SETTINGS.TXT СТИРАЮТСЯ, советую делать копию settings.txt.
+6. Если бот не знает слово, которое написал пользователь в лс вк, он не ответит.
+7. НЕ СТАВТЕ ПРОБЕЛЫ - ОНИ НЕ ДАЮТ ПРОГРАММЕ РАБОТАТЬ НОРМАЛЬНО!
+8. Если приложение вылетело - проверьте ваше соединение с интернетом или правильность введенных данных, если это не помогло, попробуйте перезаписать данные.
+9. После каждого написания/переписания информации из settings.txt вам нужно будет перезапустить приложение.
 
 Linux
 
 EN
-1. You need pip to be installed.
+1. You need pip and python 3 to be installed.
 2. Install vk_api (pip install vk_api or pip3 install vk_api).
 3. Open vgb.py and run it.
 Other things are all the same as in windows instruction.
@@ -33,7 +35,7 @@ Other things are all the same as in windows instruction.
 
 
 RU
-1. У вас должен быть установлен pip.
+1. У вас должен быть установлен pip и python 3.
 2. Установите vk_api (pip install vk_api или pip3 install vk_api).
 3. Откройте vgb.py и запустите его.
 Все остальное нужно делать как в инструкции для windows.
@@ -41,7 +43,7 @@ RU
 Android
 
 EN
-1. After you download a zip VkGroupBot, unzip it anywhere you want, but make sure all the files are in folder together.
+1. After you download a zip, unzip it anywhere you want, but make sure all the files are in folder together.
 2. Download Python 3 -  Ide for Python 3 and Python repository plugin from Google Play.
 3. Choose menu option (top left corner), then select pip.
 4. Write in library name "vk_api" and install it.
