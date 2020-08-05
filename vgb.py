@@ -3,8 +3,9 @@ import random
 import time
 a=3
 b=3
+c=3
 botison=2
-while True:
+while c>2:
     check = input("Do you wanna to turn on the bot OR to rewrite/write the settings.txt? 1/2 \n")
     if check=="1":
         break
@@ -36,6 +37,7 @@ while True:
             mchoice = input("Press 1 if you want to save, 2 if you want to make more messages\n")
             if mchoice == "1":
                 b=b-2
+                c=c-2
             if mchoice == "2":
                 continue
 
@@ -73,4 +75,4 @@ else:
     input("Please reopen the application")
 
 #made by alde-the-coder
-#version 1.3c
+#version 1.3d
