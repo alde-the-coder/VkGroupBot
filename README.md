@@ -1,4 +1,5 @@
-/github/v/release/Alde-the-coder/VkGroupBot?sort=semver
+https://img.shields.io/github/v/release/alde-the-coder/vkgroupbot
+
 Windows
 
 EN
