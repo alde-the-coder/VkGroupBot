@@ -2,8 +2,6 @@ import vk_api
 import random
 import time
 while True:
-    x = 1
-    y = 2
     f = open("settings.txt", "r")
     lin = f.readlines()
     token = (lin[0]).rstrip("\n")
@@ -34,5 +32,5 @@ while True:
 else:
     input("Please reopen the application")
 
-#made by alde-the-coder
-#version 1.3f
+#Made by alde-the-coder
+#Version 2.0
