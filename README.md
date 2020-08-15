@@ -1,7 +1,8 @@
+/github/v/release/Alde-the-coder/VkGroupBot?sort=semver
 Windows
 
 EN
-1. You need a python 3 installed (python 2 may work too).
+1. You need a python 3.6+ installed.
 2. When download vk_api (open cmd, and write python -m pip install vk_api or pip install vk_api)
 3. To make a bot, open vgb.py and ran it, enter your token and messanges/answers you want, after that select to launch the bot and the bot is launched! (I advise you to write something to him to make sure everything works)
 4. The settings file stores your token and messages/answers in this order - 1.token 2.msgb 3.msgu 4.msgb2 5.msgu2 and so on, which means that the first line is a token, the second is a message to the bot, the third is message to the user, etc.
@@ -14,7 +15,7 @@ EN
 
 
 RU
-1. У вас должен быть установлен python 3 (python 2 врядли будет работать).
+1. У вас должен быть установлен python 3.6+.
 2. После этого установите vk_api (откройте командную строку и напишите python -m pip install vk_api или pip install vk_api)
 3. Чтобы сделать бота откройте vgb.py и запустите его, введите туда ваш токен и сообщения/ответы, которые вы хотите, потом выьерите пункт включения бота и бот запущен! (советую написать ему что-то, чтобы убедиться, что все работает)
 4. В файле settings хранятся ваш токен и сообщения-ответы в таком порядке - 1.token 2.msgb 3.msgu 4.msgb2 5.msgu2 и тд, что означает, что первая строка это токен, вторая - сообщение боту, третья - сообщение пользователю и тд.
