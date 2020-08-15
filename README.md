@@ -1,4 +1,4 @@
-https://img.shields.io/github/v/release/alde-the-coder/vkgroupbot
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/alde-the-coder/vkgroupbot?logo=GitHub)
 
 Windows
 
