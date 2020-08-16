@@ -2,5 +2,5 @@
 
 | Version | Supported          |
 | ------- | ------------------ |
-| >1.3x   | :white_check_mark: |
-| <1.3x   | :x:                |
+| >1.3a   | :white_check_mark: |
+| <1.3a   | :x:                |
