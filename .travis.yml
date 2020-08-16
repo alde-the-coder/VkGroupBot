@@ -11,4 +11,4 @@ install:
  - pip install vk_api
 
 script:
- - vgb
+ - pytest
