@@ -5,7 +5,7 @@
 Windows
 
 EN
-1. You need a python 3 installed (python 2 may work too).
+1. You need a python 3 installed (python 2 may not work).
 2. When download vk_api (open cmd, and write python -m pip install vk_api or pip install vk_api)
 3. To make a bot, open vgb.py and ran it, enter your token and messanges/answers you want, after that select to launch the bot and the bot is launched! (I advise you to write something to him to make sure everything works)
 4. The settings file stores your token and messages/answers in this order - 1.token 2.msgb 3.msgu 4.msgb2 5.msgu2 and so on, which means that the first line is a token, the second is a message to the bot, the third is message to the user, etc.
