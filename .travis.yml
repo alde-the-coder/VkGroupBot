@@ -7,7 +7,7 @@ python:
  - "3.7"
  - "3.8"
 
-install:
+before_script:
  - pip install vk_api
 
 script:
