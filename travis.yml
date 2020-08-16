@@ -1,0 +1,11 @@
+language: python
+python:
+ - "3.6"
+ - "3.7"
+ - "3.8"
+
+services:
+ - vk_api
+
+
+before_script: pip install vk_api
