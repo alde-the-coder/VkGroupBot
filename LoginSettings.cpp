@@ -53,5 +53,5 @@ int main(){
     }
     system("pause");
 }
-// Made by Alde-the-coder
+// Made by alde-the-coder
 // Version 2.0
