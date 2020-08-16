@@ -1,7 +1,8 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/alde-the-coder/vkgroupbot?logo=GitHub)
 ![GitHub Release Date](https://img.shields.io/github/release-date/Alde-the-coder/VkGroupBot?logo=GitHub)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Alde-the-coder/VkGroupBot?logo=GitHub)
-[![Build Status](https://travis-ci.org/alde-the-coder/VkGroupBot.svg?branch=master)](https://travis-ci.org/alde-the-coder/VkGroupBot)
+![GitHub All Releases](https://img.shields.io/github/downloads/Alde-the-coder/VkGroupBot/total?logo=GitHub)
+
 
 Windows
 
