@@ -1,4 +1,8 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/alde-the-coder/vkgroupbot?logo=GitHub)
+![GitHub repo size](https://img.shields.io/github/repo-size/Alde-the-coder/VkGroupBot?logo=GitHub)
+![GitHub Release Date](https://img.shields.io/github/release-date/Alde-the-coder/VkGroupBot?logo=GitHub)
+![GitHub last commit](https://img.shields.io/github/last-commit/Alde-the-coder/VkGroupBot?logo=GitHub)
+![GitHub All Releases](https://img.shields.io/github/downloads/Alde-the-coder/VkGroupBot/total?logo=GitHub)
 
 Windows
 
