@@ -80,3 +80,14 @@ RU
 8. Найдите в появившемся окне распакованную папку с файломи и выберите vgb.py.
 9. Потом нажмите на кнопку запуска (правый нижний угол).
 Все остальное нужно делать как в инструкции для windows.
+
+
+
+
+# Language Instruction
+
+EN
+To change a language, open Language.txt, replace the "EN" from the file to "RU", this will change english language to russian language in the application.
+
+RU
+Что бы изменить язык, откройте Language.txt, замените в нем "EN" на "RU", это изменит язык в приложении на русский.
