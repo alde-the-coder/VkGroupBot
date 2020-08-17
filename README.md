@@ -87,7 +87,9 @@ RU
 # Language Instruction
 
 EN
+
 To change a language, open Language.txt, replace the "EN" from the file to "RU", this will change english language to russian language in the application.
 
 RU
+
 Что бы изменить язык, откройте Language.txt, замените в нем "EN" на "RU", это изменит язык в приложении на русский.
