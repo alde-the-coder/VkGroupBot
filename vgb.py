@@ -15,7 +15,7 @@ with open("language.txt") as file: # Opens language.txt.
             if check=="2": # If its 2, this code will run.
                 botison=botison-2 # Makes impossible to turn un the bot.
                 while True: # Cycle about token.
-                    token = input("Введите ваш токен \n") # Asks user to input he's token.
+                    token = input("Введите ваш токен \n") # Asks user to input his token.
                     choice = input("Введите 1 если хотите продолжить, 2 если хотите изменить токен\n") # Asks user to input 1 or 2.
                     if choice == "1": # If 1 is entered this code will run.
                         f = open("settings.txt", "w") # Opens the settings.txt and deletes all previous data.
