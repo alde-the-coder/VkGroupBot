@@ -93,3 +93,6 @@ To change a language, open Language.txt, replace the "EN" from the file to "RU",
 RU
 
 Что бы изменить язык, откройте Language.txt, замените в нем "EN" на "RU", это изменит язык в приложении на русский.
+
+## If you have any questions left, you can contact me on this email - aldethecoder@gmail.com
+## Если у вас остались вопросы, вы можете написать мне на эту почту - aldethecoder@gmail.com
