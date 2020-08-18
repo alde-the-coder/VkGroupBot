@@ -6,8 +6,8 @@
 
 | Version | Supported          |
 | ------- | ------------------ |
-| >=1.3a  | :white_check_mark: |
-| <1.3a   | :x:                |
+| >=1.3e  | :white_check_mark: |
+| <1.3e   | :x:                |
 
 # Instruction
 
