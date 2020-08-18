@@ -1,6 +1,4 @@
-import vk_api # Imports Vk_api.
-import random # Imports random.
-import time # Imports time.
+import vk_api, random, time # Imports vk_api, random and time libraries.
 botison = 2 # Variable botison = 2 (2 means that bot can be turned on).
 mainloop = 2 # Variable mainloop = 2 (2 means that main loop will work).
 RU="RU" # Variable RU = string "RU".
@@ -115,4 +113,4 @@ else: # If variable is lower than 1, this code will run.
         input("Please reopen the application") # Asks user to reopen the application.
 
 # Made by alde-the-coder
-# Version 1.4a
+# Version 1.4b
