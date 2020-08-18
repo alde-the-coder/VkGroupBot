@@ -3,6 +3,12 @@ botison = 2 # Variable botison = 2 (2 means that bot can be turned on).
 mainloop = 2 # Variable mainloop = 2 (2 means that main loop will work).
 RU="RU" # Variable RU = string "RU".
 language = 1 # Variable language = 1 (1 = english).
+try: # Creates a Try-Except construction.
+    open("language.txt", "r") # Check is there language.txt.
+except FileNotFoundError: # If language.txt not found, this code will run.
+    checkfile = open("language.txt", "w")  # Creates the language.txt file.
+    checkfile.write("EN") # Writes "EN" in language.txt.
+    print("File language.txt not found, making a new one with stock settings...") # Prints that the language.txt was made.
 with open("language.txt") as file: # Opens language.txt.
     if RU in file.read(): # If in language.txt printed "RU" this code will run.
         language = language - 1 # Changes the variable to 0 (0 = russian).
@@ -77,6 +83,10 @@ with open("language.txt") as file: # Opens language.txt.
                         continue
 
 if botison>1: # Checks the variable, if its bigger than 1, this code will run.
+    try: # Makes a Try-Except construction.
+        open("settings.txt", "r") # Checks is there settings.txt.
+    except FileNotFoundError: # If settings.txt not found, this code will run.
+        input("File settings.txt not found, please reopen the application and select to make one.") # Prints that the settings.txt needs to be made.
     f = open("settings.txt", "r") # Open file to read it.
     lin = f.readlines() # Reads lines and saves it as a variable.
     token = (lin[0]).rstrip("\n") # Says what token is on line with index 0 (first line in txt) and deletes new line.
@@ -113,4 +123,4 @@ else: # If variable is lower than 1, this code will run.
         input("Please reopen the application") # Asks user to reopen the application.
 
 # Made by alde-the-coder
-# Version 1.4b
+# Version 1.4c
