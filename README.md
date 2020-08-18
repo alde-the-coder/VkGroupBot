@@ -1,6 +1,6 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/alde-the-coder/vkgroupbot?logo=GitHub)
 ![GitHub Release Date](https://img.shields.io/github/release-date/Alde-the-coder/VkGroupBot?logo=GitHub)
-![GitHub All Releases](https://img.shields.io/github/downloads/Alde-the-coder/VkGroupBot/total?logo=GitHub)
+![GitHub](https://img.shields.io/github/license/alde-the-coder/vkgroupbot?logo=GitHub)
 
 # Supported Versions
 
