@@ -3,12 +3,24 @@ botison = 2 # Variable botison = 2 (2 means that bot can be turned on).
 mainloop = 2 # Variable mainloop = 2 (2 means that main loop will work).
 RU="RU" # Variable RU = string "RU".
 language = 1 # Variable language = 1 (1 = english).
+try:
+    open("autostartbot.txt", "r") # Checks is there autostartbot.txt.
+except FileNotFoundError: # If autostartbot does not exist this code will run.
+    startfile = open("autostartbot.txt", "w") # Creates autobotstart.txt.
+    startfile.write("0") # Writes "0" (this means what bot will not launch automatically).
+    startfile.close() # Closes the file.
 try: # Creates a Try-Except construction.
-    open("language.txt", "r") # Check is there language.txt.
+    open("language.txt", "r") # Checks is there language.txt.
 except FileNotFoundError: # If language.txt not found, this code will run.
     checkfile = open("language.txt", "w")  # Creates the language.txt file.
     checkfile.write("EN") # Writes "EN" in language.txt.
+    checkfile,close() # Closes the file.
     print("File language.txt not found, making a new one with stock settings...") # Prints that the language.txt was made.
+with open("autostartbot.txt") as autocheck: # Opens autobotstart.txt.
+    if "1" in autocheck.read(): # Searches for "1" in it (1=bot will start automatically).
+        mainloop=mainloop-2 # If "1" was found, mainloop will not run.
+    else: # If "1" was not found, mainloop will run.
+        pass # Just pass.
 with open("language.txt") as file: # Opens language.txt.
     if RU in file.read(): # If in language.txt printed "RU" this code will run.
         language = language - 1 # Changes the variable to 0 (0 = russian).
