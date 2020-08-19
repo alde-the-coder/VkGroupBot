@@ -94,5 +94,16 @@ RU
 
 Что бы изменить язык, откройте Language.txt, замените в нем "EN" на "RU", это изменит язык в приложении на русский.
 
+# Auto start Instruction
+
+EN
+
+If in file autostartbot.txt will be writen "1", bot will start automatically, without asking user what he wants to do, if there will be no "1" in file, application will ask user what he wants (to launch the bot or to change settings.txt.)
+
+RU
+
+
+Если в файле autostartbot.txt будет написано "1", бот запустится автоматически, не спрашивая пользователя, что он хочет сделать, если в файле не будет "1", приложение спросит пользователя, что он хочет (запустить бота или изменить settings.txt.)
+
 ## If you have any questions left, you can contact me on this email - aldethecoder@gmail.com
 ## Если у вас остались вопросы, вы можете написать мне на эту почту - aldethecoder@gmail.com
