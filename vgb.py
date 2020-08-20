@@ -3,7 +3,7 @@ botison = 2 # Variable botison = 2 (2 means that bot can be turned on).
 mainloop = 2 # Variable mainloop = 2 (2 means that main loop will work).
 RU="RU" # Variable RU = string "RU".
 language = 1 # Variable language = 1 (1 = english).
-try:
+try: # Creates a Try-Except construction.
     open("autostartbot.txt", "r") # Checks is there autostartbot.txt.
 except FileNotFoundError: # If autostartbot does not exist this code will run.
     startfile = open("autostartbot.txt", "w") # Creates autobotstart.txt.
