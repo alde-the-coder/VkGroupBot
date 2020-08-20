@@ -98,7 +98,11 @@ if botison>1: # Checks the variable, if its bigger than 1, this code will run.
     try: # Makes a Try-Except construction.
         open("settings.txt", "r") # Checks is there settings.txt.
     except FileNotFoundError: # If settings.txt not found, this code will run.
-        input("File settings.txt not found, please reopen the application and select to make one.") # Prints that the settings.txt needs to be made.
+    	with open("autostartbot.txt") as errorcheck: # Opens autostartbot.txt.
+    		if "1" in errorcheck.read(): # If "1" is in autostartbot.txt, this code will run.
+    			input("File settings.txt not found, please turn off the autostartbot feature, reopen application and select to create settings.txt.") # Prints that the settings.txt needs to be made.
+    		else: # If "1" is not found, this code will run.
+        		input("File settings.txt not found, please reopen the application and select to make one.") # Prints that the settings.txt needs to be made.
     f = open("settings.txt", "r") # Open file to read it.
     lin = f.readlines() # Reads lines and saves it as a variable.
     token = (lin[0]).rstrip("\n") # Says what token is on line with index 0 (first line in txt) and deletes new line.
@@ -135,4 +139,4 @@ else: # If variable is lower than 1, this code will run.
         input("Please reopen the application") # Asks user to reopen the application.
 
 # Made by alde-the-coder
-# Version 1.5
+# Version 1.5a
