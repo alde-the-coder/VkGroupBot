@@ -75,13 +75,13 @@ if botison>1: # Checks the variable, if its bigger than 1, this code will run.
     		if "1" in errorcheck.read(): # If "1" is in autostartbot.txt, this code will run.
     			input("File settings.txt not found, please turn off the autostartbot feature, reopen application and select to create settings.txt.") # Prints that the settings.txt needs to be made.
     		else: # If "1" is not found, this code will run.
-        		input("File settings.txt not found, please reopen the application and select to make one.") # Prints that the settings.txt needs to be made.
+    			input("File settings.txt not found, please reopen the application and select to make one.") # Prints that the settings.txt needs to be made.
     f = open("settings.txt", "r") # Open file to read it.
     lin = f.readlines() # Reads lines and saves it as a variable.
     token = (lin[0]).rstrip("\n") # Says what token is on line with index 0 (first line in txt) and deletes new line.
     vk = vk_api.VkApi(token=token) # Connects to vk servers. 
     vk._auth_token() # Connects to vk servers.
-    print(var.messagebot)
+    print(var.messagebot) # Prints what bot is on.
     while True: # Bot cycle.
         try: # Makes a try cycle.
             messages = vk.method("messages.getConversations", {"offset": 0, "count": 1, "filter": "unanswered"}) # Gets a message.
