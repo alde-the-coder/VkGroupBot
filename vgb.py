@@ -5,8 +5,6 @@ except Exception: # If variables.py not found, this code will run.
     input("Variables.py file not found please, redownload it from my github (alde-the-coder/vkgroupbot)") # Asks user to redownlaod variables.py from github
 botison = 2 # Variable botison = 2 (2 means that bot can be turned on).
 mainloop = 2 # Variable mainloop = 2 (2 means that main loop will work).
-RU="RU" # Variable RU = string "RU".
-language = 1 # Variable language = 1 (1 = english).
 try: # Creates a Try-Except construction.
     open("autostartbot.txt", "r") # Checks is there autostartbot.txt.
 except FileNotFoundError: # If autostartbot does not exist this code will run.
@@ -27,24 +25,24 @@ with open("autostartbot.txt") as autocheck: # Opens autobotstart.txt.
     else: # If "1" was not found, mainloop will run.
         pass # Just pass.
 with open("language.txt") as file: # Opens language.txt.
-    if RU in file.read(): # If in language.txt printed "RU" this code will run.
-        language = language - 1 # Changes the variable to 0 (0 = russian).
-    else: # If there is no "RU" in language.txt this code will run.
-        var.question1ru=var.question1
-        var.question2ru=var.question2
-        var.question3ru=var.question3
-        var.question4ru=var.question4
-        var.question5ru=var.question5
-        var.question6ru=var.question6 # Changing all russian variables to english ones.
+    if "RU" in file.read(): # If in language.txt printed "RU" this code will run.
+        var.question1=var.question1ru
+        var.question2=var.question2ru
+        var.question3=var.question3ru
+        var.question4=var.question4ru
+        var.question5=var.question5ru
+        var.question6=var.question6ru
+        var.messagebot=var.messagebotru 
+        var.errormessage=var.errormessageru # Changing all english variables to russian ones.
 while mainloop>1: # Main loop.
-            check = input(var.question1ru) # Asks user to input 1 or 2.
+            check = input(var.question1) # Asks user to input 1 or 2.
             if check=="1": # Checking what did user input, if its 1 this code will run.
                 break # Breaks the cycle.
             if check=="2": # If its 2, this code will run.
                 botison=botison-2 # Makes impossible to turn un the bot.
                 while True: # Cycle about token.
-                    token = input(var.question2ru) # Asks user to input his token.
-                    choice = input(var.question3ru) # Asks user to input 1 or 2.
+                    token = input(var.question2) # Asks user to input his token.
+                    choice = input(var.question3) # Asks user to input 1 or 2.
                     if choice == "1": # If 1 is entered this code will run.
                         f = open("settings.txt", "w") # Opens the settings.txt and deletes all previous data.
                         f.write(token + "\n") # Writes token in the file.
@@ -56,14 +54,14 @@ while mainloop>1: # Main loop.
                         f.close() # Closing a file.
                         continue # Makes a loop.
                 while True: # Cycle about messanges.
-                    msgb = input(var.question4ru) # Asks user to input users message to the bot.
-                    msgu = input(var.question5ru) # Asks user to input bots answer to users message.
+                    msgb = input(var.question4) # Asks user to input users message to the bot.
+                    msgu = input(var.question5) # Asks user to input bots answer to users message.
                     f = open("settings.txt", "a") # Opens settings.txt to add data.
                     f.write(msgb + "\n") # Writes users message in the file.
                     f.write(msgu + "\n") # Writes bots message in the file.
                     f.write("\n") # Writes a new line in the life.
                     f.close() # Closes the file.
-                    mchoice = input(var.question6ru) # Asks user to input 1 or 2.
+                    mchoice = input(var.question6) # Asks user to input 1 or 2.
                     if mchoice == "1": # If 1 is entered this code will run.
                         mainloop=mainloop-2 # Breaks the mainloop.
                         break # Breaks this loop.
@@ -75,18 +73,15 @@ if botison>1: # Checks the variable, if its bigger than 1, this code will run.
     except FileNotFoundError: # If settings.txt not found, this code will run.
     	with open("autostartbot.txt") as errorcheck: # Opens autostartbot.txt.
     		if "1" in errorcheck.read(): # If "1" is in autostartbot.txt, this code will run.
-    		    input("File settings.txt not found, please turn off the autostartbot feature, reopen application and select to create settings.txt.") # Prints that the settings.txt needs to be made.
+    			input("File settings.txt not found, please turn off the autostartbot feature, reopen application and select to create settings.txt.") # Prints that the settings.txt needs to be made.
     		else: # If "1" is not found, this code will run.
-        	    input("File settings.txt not found, please reopen the application and select to make one.") # Prints that the settings.txt needs to be made.
+        		input("File settings.txt not found, please reopen the application and select to make one.") # Prints that the settings.txt needs to be made.
     f = open("settings.txt", "r") # Open file to read it.
     lin = f.readlines() # Reads lines and saves it as a variable.
     token = (lin[0]).rstrip("\n") # Says what token is on line with index 0 (first line in txt) and deletes new line.
     vk = vk_api.VkApi(token=token) # Connects to vk servers. 
     vk._auth_token() # Connects to vk servers.
-    if language==0: # Check the language (0=russian).
-        print("Бот включен!") # Print a message of success.
-    else: # If language variable!=0, this will run.
-        print("Bot is working!") # Print a message of success.
+    print(var.messagebot)
     while True: # Bot cycle.
         try: # Makes a try cycle.
             messages = vk.method("messages.getConversations", {"offset": 0, "count": 1, "filter": "unanswered"}) # Gets a message.
@@ -108,10 +103,7 @@ if botison>1: # Checks the variable, if its bigger than 1, this code will run.
         except Exception as E: # Makes a exception.
             time.sleep(1) # How much code can sleep (seconds).
 else: # If variable is lower than 1, this code will run.
-    if language==0: # Check the language. (0=russian).
-        input("Пожалуйста перезайдите в приложение") # Asks user to reopen the application.
-    else: # If language variable is not equal to 0, this will run.
-        input("Please reopen the application") # Asks user to reopen the application.
+    input(var.errormessage)  # Asks user to reopen the application.
 
 # Made by alde-the-coder
-# Version 1.5b
+# Version 1.5c
