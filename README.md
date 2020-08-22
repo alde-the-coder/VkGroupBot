@@ -3,14 +3,23 @@
 ![GitHub](https://img.shields.io/github/license/alde-the-coder/vkgroupbot?logo=GitHub)
 
 # Supported Versions
-
 | Version | Supported          |
 | ------- | ------------------ |
 | >=1.6   | :white_check_mark: |
 | <1.6    | :x:                |
 
-# Instruction
 
+
+# Instruction
+## Quick links:
+1.[Installation Instruction](https://github.com/alde-the-coder/VkGroupBot#installation-instruction)
+2.[Language Instruction](https://github.com/alde-the-coder/VkGroupBot#language-instruction)
+3.[Autostartbot Instuction](https://github.com/alde-the-coder/VkGroupBot#auto-start-instruction)
+4.[Still have questions?](https://github.com/alde-the-coder/VkGroupBot#contact)
+
+
+
+# Installation Instruction
 Windows
 
 EN
@@ -103,5 +112,7 @@ RU
 
 Если в файле autostartbot.txt будет написано "1", бот запустится автоматически, не спрашивая пользователя, что он хочет сделать, если в файле не будет "1", приложение спросит пользователя, что он хочет (запустить бота или изменить settings.txt.)
 
-## If you have any questions left, you can contact me on this email - aldethecoder@gmail.com
-## Если у вас остались вопросы, вы можете написать мне на эту почту - aldethecoder@gmail.com
+# Contact
+
+EN - If you have any questions left, you can contact me on this email - aldethecoder@gmail.com or on this telegram @coderalde
+RU - Если у вас остались вопросы, вы можете написать мне на эту почту - aldethecoder@gmail.com или на этот telegram @coderalde
