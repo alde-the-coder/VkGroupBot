@@ -32,6 +32,7 @@ with open("language.txt") as file: # Opens language.txt.
         var.question4=var.question4ru
         var.question5=var.question5ru
         var.question6=var.question6ru
+        var.question7=var.question7ru
         var.messagebot=var.messagebotru 
         var.errormessage=var.errormessageru # Changing all english variables to russian ones.
 while mainloop>1: # Main loop.
@@ -42,11 +43,12 @@ while mainloop>1: # Main loop.
                 botison=botison-2 # Makes impossible to turn un the bot.
                 while True: # Cycle about token.
                     token = input(var.question2) # Asks user to input his token.
+                    idk = input(var.question7)
                     choice = input(var.question3) # Asks user to input 1 or 2.
                     if choice == "1": # If 1 is entered this code will run.
                         f = open("settings.txt", "w") # Opens the settings.txt and deletes all previous data.
-                        f.write(token + "\n") # Writes token in the file.
-                        f.write("\n") # Writes a new line in the file.
+                        f.write(token + "\n\n") # Writes token in the file.
+                        f.write(idk + "\n\n") # Writes a new line in the file.
                         f.close() # Closes the file.
                         break # Breaks the cycle.
                     if choice == "2": # If 2, this one.
@@ -58,8 +60,7 @@ while mainloop>1: # Main loop.
                     msgu = input(var.question5) # Asks user to input bots answer to users message.
                     f = open("settings.txt", "a") # Opens settings.txt to add data.
                     f.write(msgb + "\n") # Writes users message in the file.
-                    f.write(msgu + "\n") # Writes bots message in the file.
-                    f.write("\n") # Writes a new line in the life.
+                    f.write(msgu + "\n\n") # Writes bots message in the file. # Writes a new line in the life.
                     f.close() # Closes the file.
                     mchoice = input(var.question6) # Asks user to input 1 or 2.
                     if mchoice == "1": # If 1 is entered this code will run.
@@ -79,6 +80,7 @@ if botison>1: # Checks the variable, if its bigger than 1, this code will run.
     f = open("settings.txt", "r") # Open file to read it.
     lin = f.readlines() # Reads lines and saves it as a variable.
     token = (lin[0]).rstrip("\n") # Says what token is on line with index 0 (first line in txt) and deletes new line.
+    idk = (lin[2]).rstrip("\n") # Idk word is on line with index 2.
     vk = vk_api.VkApi(token=token) # Connects to vk servers. 
     vk._auth_token() # Connects to vk servers.
     print(var.messagebot) # Prints what bot is on.
@@ -96,14 +98,17 @@ if botison>1: # Checks the variable, if its bigger than 1, this code will run.
                                         f = open("settings.txt", "r") # Opens file again to read.
                                         lin = f.readlines() # Reads lines and saves it as a variable.
                                         answer = (lin[index+1]).rstrip("\n") # Answer is index of a message+1 with deletes new line.
-                                        if answer != "": # Answer is not empty, this code will run.
-                                            vk.method("messages.send", {"peer_id": id, "message": answer, "random_id": random.randint(1, 2147483647)}) # Finally sends a answer to the user.
-                                        else: # If answer is empty, this code will run.
-                                            continue # Makes a loop
+                                        checkanswer = index + 1 # Index of answer in file.
+                                        if answer != "" and checkanswer % 0.3: # Answer is not empty, this code will run and index of answer : 0.3 = 0 this code will run.
+                                            vk.method("messages.send", {"peer_id": id, "message": answer, "random_id": random.randint(1, 2147483647)}) # Sends a answer to the user.
+                                        else: # If answer="" or index of answer : 0.3 != 0, this code will run.
+                                            vk.method("messages.send", {"peer_id": id, "message": idk, "random_id": random.randint(1, 2147483647)}) # Sends a answer to the user.
+                    else: # If word not found, this code will run
+                   	    vk.method("messages.send", {"peer_id": id, "message": idk, "random_id": random.randint(1, 2147483647)}) # Sends a answer to the user.
         except Exception as E: # Makes a exception.
             time.sleep(1) # How much code can sleep (seconds).
 else: # If variable is lower than 1, this code will run.
     input(var.errormessage)  # Asks user to reopen the application.
 
 # Made by alde-the-coder
-# Version 1.5d
+# Version 1.6
