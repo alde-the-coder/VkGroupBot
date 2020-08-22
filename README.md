@@ -115,4 +115,5 @@ RU
 # Contact
 
 EN - If you have any questions left, you can contact me on this email - aldethecoder@gmail.com or on this telegram @coderalde
+
 RU - Если у вас остались вопросы, вы можете написать мне на эту почту - aldethecoder@gmail.com или на этот telegram @coderalde
