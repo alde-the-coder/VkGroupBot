@@ -111,4 +111,4 @@ else: # If variable is lower than 1, this code will run.
     input(var.errormessage)  # Asks user to reopen the application.
 
 # Made by alde-the-coder
-# Version 1.6
+# Version 1.7
