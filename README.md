@@ -74,7 +74,7 @@ EN
 1. You need pip3 and python 3.4+ to be installed.
 2. Install vk_api (pip3 install vk_api).
 3. Open vgb.py and run it.
-Other things are all the same as in windows instruction.
+Other things are all the same as in windows instruction(№2).
 
 
 
@@ -82,7 +82,7 @@ RU
 1. У вас должен быть установлен pip3 и python 3.
 2. Установите vk_api (pip3 install vk_api).
 3. Откройте vgb.py и запустите его.
-Все остальное нужно делать как в инструкции для windows.
+Все остальное нужно делать как в инструкции для windows(№2).
 
 Android
 
@@ -96,7 +96,7 @@ EN
 7.  Select open.
 8. Find the folder with the vgb.py and select the .py file.
 9. Then click the play button (bottom left)
-Other things are all the same as in windows instruction.
+Other things are all the same as in windows instruction(№2).
 
 
 
@@ -110,7 +110,7 @@ RU
 7. Нажмите open.
 8. Найдите в появившемся окне распакованную папку с файломи и выберите vgb.py.
 9. Потом нажмите на кнопку запуска (правый нижний угол).
-Все остальное нужно делать как в инструкции для windows.
+Все остальное нужно делать как в инструкции для windows(№2).
 
 
 
