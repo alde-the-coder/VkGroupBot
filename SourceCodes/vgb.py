@@ -114,8 +114,6 @@ if botison>1: # Checks the variable, if its bigger than 1, this code will run.
                                     lino = help.readlines() # Reads lines and saves it as a variable.
                                     answer = (lino[index+1]).rstrip("\n") # Answer is index of a message+1 with deletes new line.
                                     checkanswer = index + 1 # Index of answer in file.
-                                    anal = (checkanswer+1) % 2
-                                    print(anal)
                                     if answer != "" and checkanswer / 2 % 2 != 0:
                                         vk.method("messages.send", {"peer_id": id, "message": answer, "random_id": random.randint(1, 2147483647)})
                                     elif answer == "" or checkanswer / 2 % 2 == 0:
